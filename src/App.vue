@@ -1,25 +1,25 @@
-<script setup>
 
+
+
+<script>
 </script>
 
 <template>
-  <h1>hello</h1>
+  <router-view />
 </template>
 
-<style >
 
-@font-face {
-    font-family:Jersey25-Regular ;
-    src: url(./assets/Jersey25-Regular.ttf);
-    
- }   
-body{
-   font-family:"Jersey25-Regular",Verdana, Geneva, Tahoma, sans-serif ;
-   color: rgba(241, 223, 221, 0.925);
-   background: url(./assets/fond.png) ;
-   height: 100vh;
-   
-   
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap ");
+#app {
+  color: rgba(241, 223, 221, 0.925);
+  background: url(./assets/fond.png);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto mono";
+  font-size: 1.1rem;
+  letter-spacing: -1px;
 }
-
 </style>
+
