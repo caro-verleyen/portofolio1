@@ -1,7 +1,5 @@
 
 <script lang="ts" setup>
-  import navBarre from "@/components/navBarre.vue";
-  import TheFooter from "@/components/TheFooter.vue";
 </script>
 
 
@@ -10,7 +8,7 @@
     retour à la
     <router-link id="aPropos__link" to="/#aPropos">page d'acceuil</router-link>
   </p>
-  <form class="message" id="f1" @submit="prevent" method="post">
+  <form class="message" id="f1" onsubmit="alert('le message est envoyé avec succès!')" >
     <label for="lastname">Nom</label>
     <input
       class="LastName"
@@ -59,6 +57,7 @@
 
 <style scoped>
   .message {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -69,22 +68,31 @@
   }
 
   .LastName {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
     height: 50px;
   }
   .FirstName {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
     height: 50px;
   }
   .Email {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
     height: 50px;
   }
   .Mess {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
     height: 150px;
   }
   .Env {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 10px;
     border-radius: 30%;
     width: 80px;
     height: 80px;
+  }
+  .retour {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
   }
 </style>
 

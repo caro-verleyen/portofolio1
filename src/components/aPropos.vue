@@ -1,11 +1,30 @@
 
-<script lang="ts" setup>
+<script>
+
+
+import Modal from './Modal.vue'
+export default{
+  name:'aPropos',
+  data(){
+    return{
+      revele:false
+    }
+  },
+  components:{
+    'Modal': Modal
+  },
+  methods:{
+    toggleModal:function(){
+      this.revele=!this.revele
+    }
+  }
+}
 </script>
 
 
 
 <template>
-  
+   
 
   <main>
     <section class="m1">
@@ -20,9 +39,11 @@
           développement web qui m'a permis d'acquerir des compétences en
           HTML,CSS et Javascript. Grace à cette formation j'ai appris à créer
           des sites Web dynamiques de A à Z <br />
-          N'hésitez pas à regarder quelques une de mes réalisations!
+          N'hésitez pas à regarder quelques une de mes réalisations ici <a href="#" class="btn-success"> <img class=click1 v-on:click="toggleModal"  type="button" src="/public/click1.png" alt="cliquez ici"></a>
         </p>
+
       </div>
+      <Modal v-bind:revele="revele" v-bind:toggleModal="toggleModal"></Modal>
       <div class="p4">
         <h3>
           J'ai hate de pouvoir discuter de vos futurs projets, alors n'hésitez
@@ -32,26 +53,26 @@
     </section>
    
   </main>
+ 
 </template>
 
 
 <style>
   a,
   a:visited {
-    color: rgb(243, 239, 239);
-    text-decoration: none;
+    color: rgb(218, 212, 212);
+    text-decoration: underline;
     text-transform: uppercase;
   }
-  a:hover {
-    color: rgb(148, 6, 6);
-  }
+
   * {
     padding: 0;
     margin: 0;
   }
 
   .m1 {
-    padding-top: 150px;
+    padding-top: 130px;
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
   }
   .m1 img {
     float: right;
@@ -107,5 +128,10 @@
 
     font-weight: 500;
     font-style: normal;
+  }
+  .click1 {
+    width: 50px;
+    height: 50px;
+    margin-right: 400px;
   }
 </style>

@@ -1,13 +1,23 @@
 
 
-
 <script>
+import AppHeader from './components/navBarre.vue';
+import AppFooter from './components/TheFooter.vue';
+
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+    AppFooter
+  }
+}
 
 </script>
 
 <template>
-
+  <app-header></app-header>
   <router-view />
+  <app-footer></app-footer>
 
 </template>
 

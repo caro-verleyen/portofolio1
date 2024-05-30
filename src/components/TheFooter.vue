@@ -1,6 +1,6 @@
 <script>
-export default {
- 
+export const TheFooter = {
+  name: 'TheFooter',
 }
 </script>
 
@@ -15,7 +15,7 @@ export default {
         </p>
         <p class="github">
           <a href="https://github.com/caro-verleyen"
-            ><img src="/public/003-github.png" alt="logo github"
+            ><img src="/public/github-24.png" alt="logo github"
           /></a>
         </p>
         <p class="twitter">
@@ -43,6 +43,10 @@ export default {
   }
   .github {
     width: 50px;
+  }
+  .github :hover {
+    opacity: 75%;
+    color: white;
   }
   .twitter {
     width: 50px;

@@ -1,18 +1,21 @@
 <script>
-export default {
-  setup() {
-    
-  },
+export const notFound = {
+  name: 'notFound',
 }
 </script>
 
 <template>
-   <img class="img404" src="/public/error404-1.png" alt="error404">
+  <div class="imagecontenair">
+    <img class="err404" src="/src/assets/404.jpg" alt="erreur404">
+  </div>
+ 
 </template>
 
 <style>
-  #img404 {
-    height: 100vh;
-    object-fit: cover;
+  .err404 {
+    display: flex;
+  }
+  .imagecontenair {
+    display: flex;
   }
 </style>

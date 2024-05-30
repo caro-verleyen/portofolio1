@@ -1,28 +1,34 @@
 <script>
-export default {
 
+export const navBarre = {
+  name: 'navBarre',
 }
+
 </script>
 
 <template>
+  
     <header class="navBarre">
     <nav class="active">
       <div class="Mep">
         <router-link id="notFound__link" to="/error404-1.png">tarifs</router-link><span>|</span>
         <router-link id="aPropos__link" to="/#aPropos">A propos</router-link>
         <span>|</span>
-        <router-link id="Realisations__link" to="/#realisations"
-          >Projets</router-link
-        >
+        <router-link id="Modal__link" to="/modal" >Projets</router-link> 
+      
         <span>|</span>
-        <router-link id="TheContact__link" to="/#TheContact"
+        <router-link id="TheContact__link" to="/TheContact"
           >Contact</router-link
         >
       </div>
     </nav>
   </header>
+  
 </template>
 <style>
+  .navBarre {
+    font-family: "robotoMono-Bold", Tahoma, Geneva, Verdana, sans-serif;
+  }
   .Mep {
     display: flex;
     height: 80px;
