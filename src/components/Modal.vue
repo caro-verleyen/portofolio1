@@ -6,9 +6,9 @@ export default {
 </script>
 
 <template>
-<div class="overlay" v-on:click="toggleModal"></div>
+
 <div id="modal" class="bloc-modale" v-if="revele">
-   
+  <div class="overlay" v-on:click="toggleModal"></div> 
   <div>
     <button type="button" class="btn-modal" v-on:click="toggleModal" >X</button>
     
@@ -106,5 +106,12 @@ export default {
 
   .cardImg:hover {
     filter: drop-shadow(10px 10px 10px white);
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 </style>
