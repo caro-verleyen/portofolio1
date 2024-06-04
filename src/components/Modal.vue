@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-<div class="overlay-modal" ></div>
+
 <div id="modal" class="bloc-modale" v-if="revele">
   
   <div>
@@ -106,14 +106,5 @@ export default {
 
   .cardImg:hover {
     box-shadow: rgb(90, 91, 92) 10px 10px 15px;
-  }
-  .overlay-modal {
-    bottom: 0;
-    display: none;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 102;
   }
 </style>
