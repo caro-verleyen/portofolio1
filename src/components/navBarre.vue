@@ -1,8 +1,8 @@
 <script>
-
 export const navBarre = {
   name: 'navBarre',
 }
+
 
 </script>
 
@@ -14,16 +14,17 @@ export const navBarre = {
         <router-link id="notFound__link" to="/error404-1.png">tarifs</router-link><span>|</span>
         <router-link id="aPropos__link" to="/#aPropos">A propos</router-link>
         <span>|</span>
-        <router-link id="Modal__link" to="/modal" >Projets</router-link> 
-      
+        <router-link id="Modal__link" to="/Modal">Projets</router-link> 
+        
         <span>|</span>
         <router-link id="TheContact__link" to="/TheContact"
           >Contact</router-link
         >
       </div>
+      
     </nav>
+    
   </header>
-  
 </template>
 <style>
   .navBarre {

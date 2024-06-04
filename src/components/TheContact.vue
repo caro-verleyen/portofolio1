@@ -1,9 +1,13 @@
 
-<script lang="ts" setup>
+<script>
+export const TheContact= {
+  name: 'TheContact',
+}
 </script>
 
 
 <template>
+  
 <p class="retour">
     retour à la
     <router-link id="aPropos__link" to="/#aPropos">page d'acceuil</router-link>

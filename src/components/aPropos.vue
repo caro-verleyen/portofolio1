@@ -27,7 +27,9 @@ export default{
    
 
   <main>
+    <Modal v-bind:revele="revele" v-bind:toggleModal="toggleModal"></Modal>
     <section class="m1">
+      
       <img class="img1" src="/public/img3.png.jpg" alt="geek fille" />
 
       <div class="intro">
@@ -39,11 +41,11 @@ export default{
           développement web qui m'a permis d'acquerir des compétences en
           HTML,CSS et Javascript. Grace à cette formation j'ai appris à créer
           des sites Web dynamiques de A à Z <br />
-          N'hésitez pas à regarder quelques une de mes réalisations ici <a href="#" class="btn-success"> <img class=click1 v-on:click="toggleModal"  type="button" src="/public/click1.png" alt="cliquez ici"></a>
+          N'hésitez pas à regarder quelques une de mes réalisations ici <a href="#" class="btn-success" > <img class=click1 v-on:click="toggleModal"   src="/public/click1.png" alt="cliquez ici" ></a>
         </p>
 
       </div>
-      <Modal v-bind:revele="revele" v-bind:toggleModal="toggleModal"></Modal>
+      
       <div class="p4">
         <h3>
           J'ai hate de pouvoir discuter de vos futurs projets, alors n'hésitez

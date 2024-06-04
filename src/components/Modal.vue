@@ -1,4 +1,4 @@
-<script>
+<script scoped>
 export default {
   name: 'Modal',
   props:['revele','toggleModal']
@@ -7,13 +7,14 @@ export default {
 
 <template>
 
+<div class="overlay-modal" ></div>
 <div id="modal" class="bloc-modale" v-if="revele">
-  <div class="overlay" v-on:click="toggleModal"></div> 
+  
   <div>
     <button type="button" class="btn-modal" v-on:click="toggleModal" >X</button>
     
   </div> 
-    
+  
     <div class="cardContainer">
       <div class="card">
         <img src="/public/blog2.png" class="cardImg" alt="un blog">
@@ -78,8 +79,7 @@ export default {
     background: url(/src/assets/fond2.png);
     position: fixed;
     top: 150px;
-    left: 100px;
-    right: 100;
+    left: 190px;
     padding-top: 100px;
     padding-bottom: 20px;
     padding-right: 20px;
@@ -105,13 +105,15 @@ export default {
   }
 
   .cardImg:hover {
-    filter: drop-shadow(10px 10px 10px white);
+    box-shadow: rgb(90, 91, 92) 10px 10px 15px;
   }
-  .overlay {
-    position: fixed;
-    top: 0;
+  .overlay-modal {
     bottom: 0;
+    display: none;
     left: 0;
+    position: fixed;
     right: 0;
+    top: 0;
+    z-index: 102;
   }
 </style>
